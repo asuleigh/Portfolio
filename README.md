@@ -4,4 +4,4 @@ This will be my professional portfolio website. I will use this site to show off
 
 # Mockup of Portfolio
 
-!(Portfolio\images\portfolioPreview.png)
+![PortfolioMockup](Portfolio\images\portfolioPreview.png)
