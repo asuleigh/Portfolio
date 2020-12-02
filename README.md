@@ -4,4 +4,4 @@ This will be my professional portfolio website. I will use this site to show off
 
 # Mockup of Portfolio
 
-![PortfolioMockup](Portfolio/images/portfolioPreview.png)
+![PortfolioMockup](https://github.com/asuleigh/Portfolio/blob/754d1af40efcaac83c54e0aa708be57f0606fcc6/images%2FportfolioPreview.png)
