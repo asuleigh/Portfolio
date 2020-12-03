@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/nav/Header";
 import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
@@ -12,14 +13,16 @@ const Home = () => (
     <Container fluid style={{ margin: 0, padding: 0 }}>
         <div>
         <Header />
-        <Row style={{ backgroundColor: "#1a6565", width: "100vw", height: "350px", borderBottomStyle: "ridge", borderColor: "#602040", margin: 0, padding: 0 }}>
-        <Col>
-        <Image src={headshot} roundedCircle style={{ width: "15vw", margin: "0 auto", paddingTop: "25px" }}/>
+        <Card>
+        <Row style={{ backgroundColor: "#1a6565", width: "100vw", height: "65vh", borderBottomStyle: "ridge", borderColor: "#602040", margin: 0, padding: 0, overflow: "hidden" }}>
+        <Col sm={12} md={12} lg={6}>
+        <Image fluid className="responsive" src={headshot} roundedCircle style={{ height: "auto", width: "30vw", margin: "0 auto", paddingTop: "25px", paddingBottom: "25px" }}/>
         </Col>
-        <Col>
-        <h2>Welcome</h2>
+        <Col sm={12} md={12} lg={6}>
+        <h1 style={{ textAlign: "center", color: "#e6ccb3", fontFamily: "Lucida Handwriting", paddingTop: "25vh", paddingBottom: "25vh", textShadow: "2px 2px 5px #602040" }}>Welcome to my creative world!</h1>
         </Col>
         </Row>
+        </Card>
         </div>
         <Row style={{ backgroundColor: "#fff2e6", width: "100vw", height: "350px", margin: 0, padding: 0 }}>
         <Col>
