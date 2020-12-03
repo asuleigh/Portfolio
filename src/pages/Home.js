@@ -3,27 +3,41 @@ import Header from "../components/nav/Header";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
+import headshot from "../../src/headshot.jpg"
 
 const Home = () => (
 <div>   
     <Container fluid style={{ margin: 0, padding: 0 }}>
         <div>
         <Header />
-        <Row style={{ backgroundColor: "#264d73", width: "100vw", height: "30vh", margin: 0, padding: 0 }}>
-        <Col>Headshot</Col>
-        <Col>Welcome</Col>
+        <Row style={{ backgroundColor: "#1a6565", width: "100vw", height: "350px", borderBottomStyle: "ridge", borderColor: "#602040", margin: 0, padding: 0 }}>
+        <Col>
+        <Image src={headshot} roundedCircle style={{ width: "15vw", margin: "0 auto", paddingTop: "25px" }}/>
+        </Col>
+        <Col>
+        <h2>Welcome</h2>
+        </Col>
         </Row>
         </div>
-        <Row style={{ backgroundColor: "#264d73", width: "100vw", height: "30vh", margin: 0, padding: 0 }}>
-        <Col>About</Col>
-        <Col>Contact</Col>
+        <Row style={{ backgroundColor: "#fff2e6", width: "100vw", height: "350px", margin: 0, padding: 0 }}>
+        <Col>
+            <h2>About</h2>
+        </Col>
+        <Col>
+            <h2>Resume and Contact</h2>
+            <li>Resume</li>
+            <li>LinkedIn</li>
+            <li>GitHub</li>
+            <li>Email</li>
+        </Col>
         </Row>
-        <Row style={{ backgroundColor: "#264d73", width: "100vw", height: "35vh", margin: 0, padding: 0 }}>
+        <Row style={{ backgroundColor: "#fff2e6", width: "100vw", height: "400px", margin: 0, padding: 0 }}>
         <h1>
             Highlighted Projects
         </h1>
-        <Carousel style={{ backgroundColor: "#264d73", width: "100vw", height: "30vh", margin: 0, padding: 0 }}>
+        <Carousel style={{ backgroundColor: "#fff2e6", width: "100vw", height: "350px", margin: 0, padding: 0 }}>
         <Carousel.Item>
         <img
             className="d-block w-100"
