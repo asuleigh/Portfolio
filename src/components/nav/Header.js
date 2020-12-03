@@ -1,8 +1,9 @@
 import React from "react";
+import Nav from "react-bootstrap/Nav";
 
 const Header = () => (
   <div>
-    <p>Header</p>
+    <Nav style={{ backgroundColor: "#e6ccb3", borderBottomStyle: "solid", borderColor: "#602040", width: "100vw", height: "5vh", margin: 0, padding: 0 }}>Amanda Surber</Nav>
   </div>
 );
 
