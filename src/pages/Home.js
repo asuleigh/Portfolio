@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/nav/Header";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -7,22 +6,23 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
 import headshot from "../../src/headshot.jpg"
+import background2 from "../../src/background2.jpg"
+import pic from "../../src/pic.jpg"
 
 const Home = () => (
 <div>   
     <Container fluid style={{ margin: 0, padding: 0 }}>
         <div>
-        <Header />
-        <Card>
-        <Row style={{ backgroundColor: "#1a6565", width: "100vw", height: "65vh", borderBottomStyle: "ridge", borderColor: "#602040", margin: 0, padding: 0, overflow: "hidden" }}>
-        <Col sm={12} md={12} lg={6}>
-        <Image fluid className="responsive" src={headshot} roundedCircle style={{ height: "auto", width: "30vw", margin: "0 auto", paddingTop: "25px", paddingBottom: "25px" }}/>
+        {/* <Card> */}
+        <Row style={{ backgroundImage: `url(${background2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "100vw", height: "100vh", borderBottomStyle: "ridge", borderColor: "#602040", margin: 0, padding: 0, overflow: "hidden" }}>
+        <Col sm={12} md={12} lg={6} style={{ justifyContent: "center", alignItems: "center",}}>
+        <Image fluid className="responsive" src={pic} roundedCircle style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "auto", width: "auto", margin: "0 auto", marginTop: "80px" }}/>
         </Col>
-        <Col sm={12} md={12} lg={6}>
-        <h1 style={{ textAlign: "center", color: "#e6ccb3", fontFamily: "Lucida Handwriting", paddingTop: "25vh", paddingBottom: "25vh", textShadow: "2px 2px 5px #602040" }}>Welcome to my creative world!</h1>
+        <Col sm={12} md={12} lg={6} style={{ justifyContent: "center", alignItems: "center",}}>
+        <p style={{ textAlign: "center", color: "#eeeeee", fontFamily: "Lucida Handwriting", textShadow: "2px 2px 5px #1d4d9a", fontSize: "48px" }}>Welcome to my creative world!</p>
         </Col>
         </Row>
-        </Card>
+        {/* </Card> */}
         </div>
         <Row style={{ backgroundColor: "#fff2e6", width: "100vw", height: "350px", margin: 0, padding: 0 }}>
         <Col>
